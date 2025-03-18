@@ -24,12 +24,13 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:5000/movies"),
+        loader: () => fetch("https://movie-review-tau-three.vercel.app/movies"),
       },
       {
         path: "/allMovies",
         element: <AllMovies />,
-        loader: () => fetch("http://localhost:5000/allMovies"),
+        loader: () =>
+          fetch("https://movie-review-tau-three.vercel.app/allMovies"),
       },
       {
         path: "/contactSection",
@@ -59,7 +60,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/movie/${params.id}`),
+          fetch(`https://movie-review-tau-three.vercel.app/movie/${params.id}`),
       },
 
       {
@@ -71,7 +72,7 @@ const router = createBrowserRouter([
         ),
 
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/movie/${params.id}`),
+          fetch(`https://movie-review-tau-three.vercel.app/movie/${params.id}`),
       },
       {
         path: "/favoriteMovies",
@@ -81,7 +82,8 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
 
-        loader: () => fetch(`http://localhost:5000/favoriteMovies`),
+        loader: () =>
+          fetch(`https://movie-review-tau-three.vercel.app/favoriteMovies`),
       },
 
       {
