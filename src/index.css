@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+a.active {
+  background: #ff3333;
+  color: white;
+  padding: 8px 2rem;
+  border-radius: 3px;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+.dark body {
+  background-color: #1a202c;
+  color: white;
+}

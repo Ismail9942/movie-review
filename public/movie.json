@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Love Nightmare",
+    "director": "Aleesha Rose",
+    "country": "Ireland",
+    "year": "2025",
+    "poster": "/slide1.png",
+    "release": "March 2025"
+  },
+  {
+    "title": "The Lost City",
+    "director": "John Doe",
+    "country": "USA",
+    "year": "2024",
+    "poster": "/slide2.jpg",
+    "release": "April 2024"
+  },
+  {
+    "title": "Dark Secrets",
+    "director": "Emily Watson",
+    "country": "UK",
+    "year": "2023",
+    "poster": "/slider33.jpg",
+    "release": "December 2023"
+  },
+  {
+    "title": "Beyond the Stars",
+    "director": "Michael Brown",
+    "country": "Love History",
+    "year": "2026",
+    "poster": "/veer-zaara_mobile.jpg",
+    "release": "January 2004"
+  }
+]
