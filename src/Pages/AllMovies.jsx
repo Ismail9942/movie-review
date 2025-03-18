@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 const AllMovies = () => {
   const movies = useLoaderData();
+  console.log(movies);
   const [search, setSearch] = useState("");
   const [movieData, setMovieData] = useState(movies);
 
@@ -13,7 +14,9 @@ const AllMovies = () => {
     if (search.trim() === "") {
       setMovieData(movies);
     } else {
-      fetch(`http://localhost:5000/allMovies?searchParams=${search}`)
+      fetch(
+        `https://movie-review-tau-three.vercel.app/allMovies?searchParams=${search}`
+      )
         .then((res) => res.json())
         .then((data) => {
           setMovieData(data);

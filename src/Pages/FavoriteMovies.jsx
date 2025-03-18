@@ -34,9 +34,12 @@ const FavoriteMovies = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/favoriteMovies/${_id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://movie-review-tau-three.vercel.app/favoriteMovies/${_id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => {
             if (!res.ok) {
               throw new Error("Failed to delete movie");

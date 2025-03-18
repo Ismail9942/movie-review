@@ -66,7 +66,7 @@ const AddMovie = () => {
     };
     console.log(email);
 
-    fetch("http://localhost:5000/movies", {
+    fetch("https://movie-review-tau-three.vercel.app//movies", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newMovie),

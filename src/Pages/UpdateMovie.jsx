@@ -55,11 +55,14 @@ const UpdateMovie = () => {
       summary,
     };
 
-    fetch(`http://localhost:5000/updateMovie/${movie._id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedMovie),
-    })
+    fetch(
+      `https://movie-review-tau-three.vercel.app/updateMovie/${movie._id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedMovie),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount > 0) {

@@ -63,7 +63,7 @@ const MovieDetails = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/movies/${_id}`, {
+        fetch(`https://movie-review-tau-three.vercel.app/movies/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
