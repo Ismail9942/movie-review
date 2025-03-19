@@ -76,7 +76,7 @@ const ContactSection = () => {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border  bg-amber-50 text-gray-900 rounded"
             required
           />
           <input
@@ -85,7 +85,7 @@ const ContactSection = () => {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded bg-amber-50 text-gray-900"
             required
           />
           <input
@@ -94,7 +94,7 @@ const ContactSection = () => {
             placeholder="Subject"
             value={formData.subject}
             onChange={handleChange}
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded bg-amber-50 text-gray-900"
             required
           />
           <textarea
@@ -102,7 +102,7 @@ const ContactSection = () => {
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded bg-amber-50 text-gray-900"
             required
           ></textarea>
           <button

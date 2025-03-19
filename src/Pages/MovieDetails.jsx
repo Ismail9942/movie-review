@@ -118,7 +118,7 @@ const MovieDetails = () => {
             alt={title}
           />
 
-          <div className="card-body flex-1 text-white">
+          <div className="card-body flex-1 ">
             <h2 className="card-title text-3xl font-bold mb-4">{title}</h2>
             <p className="text-lg">
               <span className="font-semibold">Genre:</span> {genre}

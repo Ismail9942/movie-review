@@ -138,7 +138,7 @@ const FavoriteMovies = () => {
           </table>
         </div>
       ) : (
-        <p className="text-center text-lg text-white">
+        <p className="text-center text-lg">
           Your watchlist is currently empty.
         </p>
       )}
