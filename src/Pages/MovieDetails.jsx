@@ -24,7 +24,7 @@ const MovieDetails = () => {
     }
 
     const favoriteMovie = { ...movie, userEmail: user.email };
-    fetch(`http://localhost:5000/favoriteMovies`, {
+    fetch(`https://movie-review-tau-three.vercel.app/favoriteMovies`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

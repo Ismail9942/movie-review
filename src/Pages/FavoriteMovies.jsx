@@ -10,7 +10,9 @@ const FavoriteMovies = () => {
   const [movieFavorite, setMovieFavorite] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/favoriteMovies?email=${user.email}`)
+    fetch(
+      `https://movie-review-tau-three.vercel.app/favoriteMovies?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setMovieFavorite(data));
   }, [user.email]);
